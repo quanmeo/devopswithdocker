@@ -1,0 +1,31 @@
+Script started on 2023-12-25 19:00:25+07:00 [TERM="xterm-256color" TTY="/dev/pts/1" COLUMNS="220" LINES="34"]
+[?2004h]0;quan@Ubuntu-22: ~/Documents/Docker-learn/devopswithdocker/part1/ex1.8[01;32mquan@Ubuntu-22[00m:[01;34m~/Documents/Docker-learn/devopswithdocker/part1/ex1.8[00m$ docker build . -t web-server
+[?2004l[1A[1B[0G[?25l[+] Building 0.0s (0/2)                                                                                                                                                                                      docker:default
+ => [internal] load .dockerignore                                                                                                                                                                                      0.0s
+ => [internal] load build definition from Dockerfile                                                                                                                                                                   0.0s
+[?25h[1A[1A[1A[0G[?25l[+] Building 0.1s (5/5) FINISHED                                                                                                                                                                             docker:default
+[34m => [internal] load .dockerignore                                                                                                                                                                                      0.0s
+[0m[34m => => transferring context: 2B                                                                                                                                                                                        0.0s
+[0m[34m => [internal] load build definition from Dockerfile                                                                                                                                                                   0.0s
+[0m[34m => => transferring dockerfile: 94B                                                                                                                                                                                    0.0s
+[0m[34m => [internal] load metadata for docker.io/devopsdockeruh/simple-web-service:alpine                                                                                                                                    0.0s
+[0m[34m => CACHED [1/1] FROM docker.io/devopsdockeruh/simple-web-service:alpine                                                                                                                                               0.0s
+[0m[34m => exporting to image                                                                                                                                                                                                 0.0s
+[0m[34m => => exporting layers                                                                                                                                                                                                0.0s
+[0m[34m => => writing image sha256:978fbf315695ef5a3ec2e77ee411c4dcd9aa9b867fbc7ea3d26962545fda0585                                                                                                                           0.0s
+[0m[34m => => naming to docker.io/library/web-server                                                                                                                                                                          0.0s
+[0m[?25h[?2004h]0;quan@Ubuntu-22: ~/Documents/Docker-learn/devopswithdocker/part1/ex1.8[01;32mquan@Ubuntu-22[00m:[01;34m~/Documents/Docker-learn/devopswithdocker/part1/ex1.8[00m$ docker run web-server-web-server-web-serverrweb-servermweb-server web-server
+[?2004l[GIN-debug] [WARNING] Creating an Engine instance with the Logger and Recovery middleware already attached.
+
+[GIN-debug] [WARNING] Running in "debug" mode. Switch to "release" mode in production.
+ - using env:	export GIN_MODE=release
+ - using code:	gin.SetMode(gin.ReleaseMode)
+
+[GIN-debug] GET    /*path                    --> server.Start.func1 (3 handlers)
+[GIN-debug] Listening and serving HTTP on :8080
+^C[?2004h]0;quan@Ubuntu-22: ~/Documents/Docker-learn/devopswithdocker/part1/ex1.8[01;32mquan@Ubuntu-22[00m:[01;34m~/Documents/Docker-learn/devopswithdocker/part1/ex1.8[00m$ docker ps =-as[K[K[K[K-as
+[?2004lCONTAINER ID   IMAGE     COMMAND   CREATED   STATUS    PORTS     NAMES     SIZE
+[?2004h]0;quan@Ubuntu-22: ~/Documents/Docker-learn/devopswithdocker/part1/ex1.8[01;32mquan@Ubuntu-22[00m:[01;34m~/Documents/Docker-learn/devopswithdocker/part1/ex1.8[00m$ exit
+[?2004lexit
+
+Script done on 2023-12-25 19:01:06+07:00 [COMMAND_EXIT_CODE="0"]

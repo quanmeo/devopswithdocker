@@ -1,0 +1,61 @@
+Script started on 2023-12-25 16:55:34+07:00 [TERM="xterm-256color" TTY="/dev/pts/1" COLUMNS="220" LINES="58"]
+[?2004h]0;quan@Ubuntu-22: ~/Documents/Docker-learn/devopswithdocker/part1[01;32mquan@Ubuntu-22[00m:[01;34m~/Documents/Docker-learn/devopswithdocker/part1[00m$ dpockl[Kdocker images
+[?2004lREPOSITORY                          TAG       IMAGE ID       CREATED        SIZE
+ubuntu                              latest    174c8c134b2a   12 days ago    77.9MB
+nginx                               latest    d453dd892d93   2 months ago   187MB
+devopsdockeruh/simple-web-service   ubuntu    4e3362e907d5   2 years ago    83MB
+[?2004h]0;quan@Ubuntu-22: ~/Documents/Docker-learn/devopswithdocker/part1[01;32mquan@Ubuntu-22[00m:[01;34m~/Documents/Docker-learn/devopswithdocker/part1[00m$ docker image pull devopsdockeruh/simple-web-service
+devopsdockeruh/simple-web-service         devopsdockeruh/simple-web-service:ubuntu  
+]0;quan@Ubuntu-22: ~/Documents/Docker-learn/devopswithdocker/part1[01;32mquan@Ubuntu-22[00m:[01;34m~/Documents/Docker-learn/devopswithdocker/part1[00m$ docker image pull devopsdockeruh/simple-web-service
+devopsdockeruh/simple-web-service         devopsdockeruh/simple-web-service:ubuntu  
+]0;quan@Ubuntu-22: ~/Documents/Docker-learn/devopswithdocker/part1[01;32mquan@Ubuntu-22[00m:[01;34m~/Documents/Docker-learn/devopswithdocker/part1[00m$ docker image pull devopsdockeruh/simple-web-service:alpine
+[?2004lalpine: Pulling from devopsdockeruh/simple-web-service
+
+[1A[2Kba3557a56b15: Pulling fs layer [1B
+[1A[2K1dace236434b: Pulling fs layer [1B
+[1A[2K4f4fb700ef54: Pulling fs layer [1B[1A[2K4f4fb700ef54: Downloading [==================================================>]      32B/32B[1B[1A[2K4f4fb700ef54: Verifying Checksum [1B[1A[2K4f4fb700ef54: Download complete [1B[3A[2Kba3557a56b15: Downloading [>                                                  ]  28.75kB/2.812MB[3B[3A[2Kba3557a56b15: Downloading [========>                                          ]  475.1kB/2.812MB[3B[3A[2Kba3557a56b15: Downloading [========================>                          ]  1.375MB/2.812MB[3B[2A[2K1dace236434b: Downloading [>                                                  ]  51.47kB/5.117MB[2B[3A[2Kba3557a56b15: Downloading [==========================================>        ]  2.399MB/2.812MB[3B[3A[2Kba3557a56b15: Verifying Checksum [3B[3A[2Kba3557a56b15: Download complete [3B[3A[2Kba3557a56b15: Extracting [>                                                  ]  32.77kB/2.812MB[3B[2A[2K1dace236434b: Downloading [==>                                                ]  210.2kB/5.117MB[2B[3A[2Kba3557a56b15: Extracting [=======================>                           ]  1.311MB/2.812MB[3B[2A[2K1dace236434b: Downloading [=======>                                           ]  783.2kB/5.117MB[2B[3A[2Kba3557a56b15: Extracting [====================================>              ]  2.032MB/2.812MB[3B[2A[2K1dace236434b: Downloading [=================>                                 ]  1.758MB/5.117MB[2B[3A[2Kba3557a56b15: Extracting [==================================================>]  2.812MB/2.812MB[3B[2A[2K1dace236434b: Downloading [=============================>                     ]  2.987MB/5.117MB[2B[3A[2Kba3557a56b15: Pull complete [3B[2A[2K1dace236434b: Downloading [==========================================>        ]  4.343MB/5.117MB[2B[2A[2K1dace236434b: Download complete [2B[2A[2K1dace236434b: Extracting [>                                                  ]  65.54kB/5.117MB[2B[2A[2K1dace236434b: Extracting [============================>                      ]  2.884MB/5.117MB[2B[2A[2K1dace236434b: Extracting [==================================================>]  5.117MB/5.117MB[2B[2A[2K1dace236434b: Pull complete [2B[1A[2K4f4fb700ef54: Extracting [==================================================>]      32B/32B[1B[1A[2K4f4fb700ef54: Extracting [==================================================>]      32B/32B[1B[1A[2K4f4fb700ef54: Pull complete [1BDigest: sha256:dd4d367476f86b7d7579d3379fe446ae5dfce25480903fb0966fc2e5257e0543
+Status: Downloaded newer image for devopsdockeruh/simple-web-service:alpine
+docker.io/devopsdockeruh/simple-web-service:alpine
+[?2004h]0;quan@Ubuntu-22: ~/Documents/Docker-learn/devopswithdocker/part1[01;32mquan@Ubuntu-22[00m:[01;34m~/Documents/Docker-learn/devopswithdocker/part1[00m$ docker images
+[?2004lREPOSITORY                          TAG       IMAGE ID       CREATED        SIZE
+ubuntu                              latest    174c8c134b2a   12 days ago    77.9MB
+nginx                               latest    d453dd892d93   2 months ago   187MB
+devopsdockeruh/simple-web-service   ubuntu    4e3362e907d5   2 years ago    83MB
+devopsdockeruh/simple-web-service   alpine    fd312adc88e0   2 years ago    15.7MB
+[?2004h]0;quan@Ubuntu-22: ~/Documents/Docker-learn/devopswithdocker/part1[01;32mquan@Ubuntu-22[00m:[01;34m~/Documents/Docker-learn/devopswithdocker/part1[00m$ docker run -d -it --rm --name exercise1.5 devopsdockeruh/simple-web-service:alpine [K
+[?2004lcc915e0f27e0bfb4fa751822fd7f55130a5b4d3fc8f13ecb7c31f4909f88ce03
+[?2004h]0;quan@Ubuntu-22: ~/Documents/Docker-learn/devopswithdocker/part1[01;32mquan@Ubuntu-22[00m:[01;34m~/Documents/Docker-learn/devopswithdocker/part1[00m$ docker ps -as
+[?2004lCONTAINER ID   IMAGE                                      COMMAND                 CREATED         STATUS         PORTS     NAMES         SIZE
+cc915e0f27e0   devopsdockeruh/simple-web-service:alpine   "/usr/src/app/server"   3 seconds ago   Up 2 seconds             exercise1.5   60B (virtual 15.7MB)
+[?2004h]0;quan@Ubuntu-22: ~/Documents/Docker-learn/devopswithdocker/part1[01;32mquan@Ubuntu-22[00m:[01;34m~/Documents/Docker-learn/devopswithdocker/part1[00m$ docker exec -it exercise1.5 sh
+[?2004l/usr/src/app # [6ntail -f ./lo[J[Jl[J[J[J[J[J[J[J[J[J[J[Jcd .
+/usr/src/app # [6ncd 
+~ # [6ntail -fg [J[J ./t^C
+~ # [6ncd -
+/usr/src/app
+/usr/src/app # [6ntail -f ./t/usr/src/app # tail -f ./text.log [J
+Secret message is: 'You can find the source code here: https://github.com/docker-hy'
+2023-12-25 09:57:15 +0000 UTC
+2023-12-25 09:57:17 +0000 UTC
+2023-12-25 09:57:19 +0000 UTC
+2023-12-25 09:57:21 +0000 UTC
+2023-12-25 09:57:23 +0000 UTC
+Secret message is: 'You can find the source code here: https://github.com/docker-hy'
+2023-12-25 09:57:25 +0000 UTC
+2023-12-25 09:57:27 +0000 UTC
+2023-12-25 09:57:29 +0000 UTC
+2023-12-25 09:57:31 +0000 UTC
+2023-12-25 09:57:33 +0000 UTC
+Secret message is: 'You can find the source code here: https://github.com/docker-hy'
+2023-12-25 09:57:35 +0000 UTC
+^C
+/usr/src/app # [6n
+[?2004h]0;quan@Ubuntu-22: ~/Documents/Docker-learn/devopswithdocker/part1[01;32mquan@Ubuntu-22[00m:[01;34m~/Documents/Docker-learn/devopswithdocker/part1[00m$ docker attach exercise1.5 
+[?2004lWrote text to /usr/src/app/text.log
+Wrote text to /usr/src/app/text.log
+^C[?2004h]0;quan@Ubuntu-22: ~/Documents/Docker-learn/devopswithdocker/part1[01;32mquan@Ubuntu-22[00m:[01;34m~/Documents/Docker-learn/devopswithdocker/part1[00m$ docker ps -as
+[?2004lCONTAINER ID   IMAGE     COMMAND   CREATED   STATUS    PORTS     NAMES     SIZE
+[?2004h]0;quan@Ubuntu-22: ~/Documents/Docker-learn/devopswithdocker/part1[01;32mquan@Ubuntu-22[00m:[01;34m~/Documents/Docker-learn/devopswithdocker/part1[00m$ exit
+[?2004lexit
+
+Script done on 2023-12-25 16:57:55+07:00 [COMMAND_EXIT_CODE="0"]
