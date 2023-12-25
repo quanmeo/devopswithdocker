@@ -1,0 +1,32 @@
+Script started on 2023-12-25 12:49:49+07:00 [TERM="xterm-256color" TTY="/dev/pts/1" COLUMNS="220" LINES="58"]
+[?2004h]0;quan@Ubuntu-22: ~/Documents/Docker-learn/devopswithdocker/part1[01;32mquan@Ubuntu-22[00m:[01;34m~/Documents/Docker-learn/devopswithdocker/part1[00m$ docker ps =-as[K[K[K[K-as
+[?2004lCONTAINER ID   IMAGE     COMMAND                  CREATED         STATUS                      PORTS     NAMES                SIZE
+72a7dfb90e25   nginx     "/docker-entrypoint.…"   2 minutes ago   Exited (0) 2 minutes ago              loving_gauss         1.09kB (virtual 187MB)
+cde8bad8e45c   nginx     "/docker-entrypoint.…"   2 minutes ago   Exited (0) 32 seconds ago             optimistic_bohr      1.09kB (virtual 187MB)
+212a1f4b054d   nginx     "/docker-entrypoint.…"   2 minutes ago   Exited (0) 2 minutes ago              confident_dubinsky   1.09kB (virtual 187MB)
+[?2004h]0;quan@Ubuntu-22: ~/Documents/Docker-learn/devopswithdocker/part1[01;32mquan@Ubuntu-22[00m:[01;34m~/Documents/Docker-learn/devopswithdocker/part1[00m$ dck[K[Kopck[K[K[Kckler[K[K[Ker images
+[?2004lREPOSITORY   TAG       IMAGE ID       CREATED        SIZE
+nginx        latest    d453dd892d93   2 months ago   187MB
+[?2004h]0;quan@Ubuntu-22: ~/Documents/Docker-learn/devopswithdocker/part1[01;32mquan@Ubuntu-22[00m:[01;34m~/Documents/Docker-learn/devopswithdocker/part1[00m$ docker system prone[K[K[Kune 
+[?2004lWARNING! This will remove:
+  - all stopped containers
+  - all networks not used by at least one container
+  - all dangling images
+  - all dangling build cache
+
+Are you sure you want to continue? [y/N] y
+Deleted Containers:
+72a7dfb90e2540f7416cd7657a2cf06a81f6defa6fb068c2fc8d094c4f3f4aeb
+cde8bad8e45c159822d3706b96b1a3efa60f9defd3510a8bbb53824b3cd34161
+212a1f4b054d7e027ccd6bc5fd312fa64321c258d41745764041a03b2f34e561
+
+Total reclaimed space: 3.279kB
+[?2004h]0;quan@Ubuntu-22: ~/Documents/Docker-learn/devopswithdocker/part1[01;32mquan@Ubuntu-22[00m:[01;34m~/Documents/Docker-learn/devopswithdocker/part1[00m$ docker ps -as
+[?2004lCONTAINER ID   IMAGE     COMMAND   CREATED   STATUS    PORTS     NAMES     SIZE
+[?2004h]0;quan@Ubuntu-22: ~/Documents/Docker-learn/devopswithdocker/part1[01;32mquan@Ubuntu-22[00m:[01;34m~/Documents/Docker-learn/devopswithdocker/part1[00m$ docker images
+[?2004lREPOSITORY   TAG       IMAGE ID       CREATED        SIZE
+nginx        latest    d453dd892d93   2 months ago   187MB
+[?2004h]0;quan@Ubuntu-22: ~/Documents/Docker-learn/devopswithdocker/part1[01;32mquan@Ubuntu-22[00m:[01;34m~/Documents/Docker-learn/devopswithdocker/part1[00m$ ex9t[K[Kit
+[?2004lexit
+
+Script done on 2023-12-25 12:50:52+07:00 [COMMAND_EXIT_CODE="0"]
