@@ -1,0 +1,19 @@
+Script started on 2023-12-26 10:27:19+07:00 [TERM="xterm-256color" TTY="/dev/pts/2" COLUMNS="204" LINES="56"]
+[?2004h]0;quan@Ubuntu-22: ~/Documents/Docker-learn/devopswithdocker/part1[01;32mquan@Ubuntu-22[00m:[01;34m~/Documents/Docker-learn/devopswithdocker/part1[00m$ touch text.log
+[?2004l[?2004h]0;quan@Ubuntu-22: ~/Documents/Docker-learn/devopswithdocker/part1[01;32mquan@Ubuntu-22[00m:[01;34m~/Documents/Docker-learn/devopswithdocker/part1[00m$ docker run -v "$(pwd)/text.log:? /usr/src/app/text.log" devopsdockeruh/simple-web-service:alpine 
+[?2004lStarting log output
+Wrote text to /usr/src/app/text.log
+Wrote text to /usr/src/app/text.log
+Wrote text to /usr/src/app/text.log
+Wrote text to /usr/src/app/text.log
+Wrote text to /usr/src/app/text.log
+^C[?2004h]0;quan@Ubuntu-22: ~/Documents/Docker-learn/devopswithdocker/part1[01;32mquan@Ubuntu-22[00m:[01;34m~/Documents/Docker-learn/devopswithdocker/part1[00m$ [Kcat text.log 
+[?2004l2023-12-26 03:27:57 +0000 UTC
+2023-12-26 03:27:59 +0000 UTC
+2023-12-26 03:28:01 +0000 UTC
+2023-12-26 03:28:03 +0000 UTC
+2023-12-26 03:28:05 +0000 UTC
+[?2004h]0;quan@Ubuntu-22: ~/Documents/Docker-learn/devopswithdocker/part1[01;32mquan@Ubuntu-22[00m:[01;34m~/Documents/Docker-learn/devopswithdocker/part1[00m$ exit
+[?2004lexit
+
+Script done on 2023-12-26 10:28:13+07:00 [COMMAND_EXIT_CODE="0"]
