@@ -1,0 +1,17 @@
+FROM node:16.0.0-alpine
+
+WORKDIR /user/src/app
+
+COPY package* ./
+COPY src/ ./src/
+COPY public/ ./public/
+
+EXPOSE 5000
+
+RUN npm install
+RUN npm update
+RUN npm run build
+
+RUN npm install -g serve
+
+CMD ["serve", "-s", "-l", "5000", "build"]

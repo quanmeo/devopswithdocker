@@ -1,0 +1,60 @@
+Script started on 2024-01-05 13:52:27+07:00 [TERM="screen" TTY="/dev/pts/5" COLUMNS="204" LINES="27"]
+[?2004hquan@quan-VirtualBox:~/Documents/Docker/material-applications/example-frontend$ exitdocker imagesrun -p 127.0.0.1:8080:8080 spring-exampleexit[Kmkdir ex1.13[8Pexitdocker run -p 127.0.0.1:8080:8080 spring-exampleexit[Kmkdir ex1.13[6Pcd ../git show --name-only HEAD[7Pcommit --amend[9Padd .vim Dockerfile ll[Kcd ex1.12/[11@mv Dockerfile[C[C[C[C[C[C[C[Ccp ~/Documents/Docker/material-applications/example-frontend/Dockerfile .mkdir ex1.12[K[6Pcd ../git show --name-only HEADlog -3[Kcommit -m "utilizing tools from the registry"log -3[Kshow --name-only HEADcd ../[K^C[?2004l[?2004h[?2004l
+[?2004hquan@quan-VirtualBox:~/Documents/Docker/material-applications/example-frontend$ docker run -it =[K-p 127.0.0.1:5000:5000 frontend-example
+[?2004l[41m[1m ERROR [22m[49m Cannot copy server address to clipboard: Couldn't find the `xsel` binary and fallback didn't work. On Debian/Ubuntu you can install xsel with: sudo apt install xsel.
+[32m[39m
+[32m   ┌────────────────────────────────────────┐[39m
+   [32m│[39m                                        [32m│[39m
+   [32m│[39m   [32mServing![39m                             [32m│[39m
+   [32m│[39m                                        [32m│[39m
+   [32m│[39m   [1m- Local:[22m    http://localhost:5000    [32m│[39m
+   [32m│[39m   [1m- Network:[22m  http://172.17.0.2:5000   [32m│[39m
+   [32m│[39m                                        [32m│[39m
+[32m   └────────────────────────────────────────┘[39m
+[32m[39m
+[44m[1m HTTP [22m[49m [2m1/5/2024 6:53:17 AM[22m [33m172.17.0.1[39m [36mGET /[39m
+[44m[1m HTTP [22m[49m [2m1/5/2024 6:53:17 AM[22m [33m172.17.0.1[39m [32mReturned 304 in 42 ms[39m
+[44m[1m HTTP [22m[49m [2m1/5/2024 6:53:17 AM[22m [33m172.17.0.1[39m [36mGET /static/css/main.eaa5d75e.chunk.css[39m
+[44m[1m HTTP [22m[49m [2m1/5/2024 6:53:17 AM[22m [33m172.17.0.1[39m [32mReturned 304 in 3 ms[39m
+[44m[1m HTTP [22m[49m [2m1/5/2024 6:53:17 AM[22m [33m172.17.0.1[39m [36mGET /static/js/2.78175b4b.chunk.js[39m
+[44m[1m HTTP [22m[49m [2m1/5/2024 6:53:17 AM[22m [33m172.17.0.1[39m [36mGET /static/js/main.74a9d592.chunk.js[39m
+[44m[1m HTTP [22m[49m [2m1/5/2024 6:53:17 AM[22m [33m172.17.0.1[39m [32mReturned 304 in 7 ms[39m
+[44m[1m HTTP [22m[49m [2m1/5/2024 6:53:17 AM[22m [33m172.17.0.1[39m [32mReturned 304 in 4 ms[39m
+[44m[1m HTTP [22m[49m [2m1/5/2024 6:53:18 AM[22m [33m172.17.0.1[39m [36mGET /static/media/toskalogo.c0f35cf0.svg[39m
+[44m[1m HTTP [22m[49m [2m1/5/2024 6:53:18 AM[22m [33m172.17.0.1[39m [32mReturned 304 in 3 ms[39m
+[44m[1m HTTP [22m[49m [2m1/5/2024 6:53:18 AM[22m [33m172.17.0.1[39m [36mGET /favicon.ico[39m
+[44m[1m HTTP [22m[49m [2m1/5/2024 6:53:18 AM[22m [33m172.17.0.1[39m [32mReturned 304 in 1 ms[39m
+[44m[1m HTTP [22m[49m [2m1/5/2024 6:53:18 AM[22m [33m172.17.0.1[39m [36mGET /manifest.json[39m
+[44m[1m HTTP [22m[49m [2m1/5/2024 6:53:18 AM[22m [33m172.17.0.1[39m [32mReturned 304 in 2 ms[39m
+[44m[1m HTTP [22m[49m [2m1/5/2024 6:53:18 AM[22m [33m172.17.0.1[39m [36mGET /static/css/main.eaa5d75e.chunk.css.map[39m
+[44m[1m HTTP [22m[49m [2m1/5/2024 6:53:18 AM[22m [33m172.17.0.1[39m [32mReturned 304 in 2 ms[39m
+[44m[1m HTTP [22m[49m [2m1/5/2024 6:53:18 AM[22m [33m172.17.0.1[39m [36mGET /static/js/2.78175b4b.chunk.js.map[39m
+[44m[1m HTTP [22m[49m [2m1/5/2024 6:53:18 AM[22m [33m172.17.0.1[39m [32mReturned 304 in 6 ms[39m
+[44m[1m HTTP [22m[49m [2m1/5/2024 6:53:18 AM[22m [33m172.17.0.1[39m [36mGET /static/js/main.74a9d592.chunk.js.map[39m
+[44m[1m HTTP [22m[49m [2m1/5/2024 6:53:18 AM[22m [33m172.17.0.1[39m [32mReturned 304 in 2 ms[39m
+^[44m[1m HTTP [22m[49m [2m1/5/2024 6:54:22 AM[22m [33m172.17.0.1[39m [36mGET /[39m
+[44m[1m HTTP [22m[49m [2m1/5/2024 6:54:22 AM[22m [33m172.17.0.1[39m [32mReturned 304 in 21 ms[39m
+[44m[1m HTTP [22m[49m [2m1/5/2024 6:54:22 AM[22m [33m172.17.0.1[39m [36mGET /static/css/main.eaa5d75e.chunk.css[39m
+[44m[1m HTTP [22m[49m [2m1/5/2024 6:54:22 AM[22m [33m172.17.0.1[39m [36mGET /static/js/2.78175b4b.chunk.js[39m
+[44m[1m HTTP [22m[49m [2m1/5/2024 6:54:22 AM[22m [33m172.17.0.1[39m [32mReturned 304 in 1 ms[39m
+[44m[1m HTTP [22m[49m [2m1/5/2024 6:54:22 AM[22m [33m172.17.0.1[39m [32mReturned 304 in 2 ms[39m
+[44m[1m HTTP [22m[49m [2m1/5/2024 6:54:22 AM[22m [33m172.17.0.1[39m [36mGET /static/js/main.74a9d592.chunk.js[39m
+[44m[1m HTTP [22m[49m [2m1/5/2024 6:54:22 AM[22m [33m172.17.0.1[39m [32mReturned 304 in 1 ms[39m
+[44m[1m HTTP [22m[49m [2m1/5/2024 6:54:22 AM[22m [33m172.17.0.1[39m [36mGET /static/media/toskalogo.c0f35cf0.svg[39m
+[44m[1m HTTP [22m[49m [2m1/5/2024 6:54:22 AM[22m [33m172.17.0.1[39m [32mReturned 304 in 2 ms[39m
+[44m[1m HTTP [22m[49m [2m1/5/2024 6:54:22 AM[22m [33m172.17.0.1[39m [36mGET /static/js/2.78175b4b.chunk.js.map[39m
+[44m[1m HTTP [22m[49m [2m1/5/2024 6:54:22 AM[22m [33m172.17.0.1[39m [32mReturned 304 in 1 ms[39m
+[44m[1m HTTP [22m[49m [2m1/5/2024 6:54:22 AM[22m [33m172.17.0.1[39m [36mGET /static/css/main.eaa5d75e.chunk.css.map[39m
+[44m[1m HTTP [22m[49m [2m1/5/2024 6:54:22 AM[22m [33m172.17.0.1[39m [32mReturned 304 in 1 ms[39m
+[44m[1m HTTP [22m[49m [2m1/5/2024 6:54:23 AM[22m [33m172.17.0.1[39m [36mGET /manifest.json[39m
+[44m[1m HTTP [22m[49m [2m1/5/2024 6:54:23 AM[22m [33m172.17.0.1[39m [32mReturned 304 in 1 ms[39m
+[44m[1m HTTP [22m[49m [2m1/5/2024 6:54:23 AM[22m [33m172.17.0.1[39m [36mGET /favicon.ico[39m
+[44m[1m HTTP [22m[49m [2m1/5/2024 6:54:23 AM[22m [33m172.17.0.1[39m [32mReturned 304 in 3 ms[39m
+[44m[1m HTTP [22m[49m [2m1/5/2024 6:54:23 AM[22m [33m172.17.0.1[39m [36mGET /static/js/main.74a9d592.chunk.js.map[39m
+[44m[1m HTTP [22m[49m [2m1/5/2024 6:54:23 AM[22m [33m172.17.0.1[39m [32mReturned 304 in 1 ms[39m
+^C^C
+[45m[1m INFO [22m[49m Gracefully shutting down. Please wait...
+[?2004hquan@quan-VirtualBox:~/Documents/Docker/material-applications/example-frontend$ exit
+[?2004lexit
+
+Script done on 2024-01-05 13:54:49+07:00 [COMMAND_EXIT_CODE="0"]

@@ -1,0 +1,28 @@
+Script started on 2024-01-05 13:53:34+07:00 [TERM="screen" TTY="/dev/pts/2" COLUMNS="204" LINES="26"]
+[?2004hquan@quan-VirtualBox:~/Documents/Docker/material-applications/example-backend$ exitdocker imagesrun -p 127.0.0.1:8080:8080 spring-exampleexit[Kdocker run -p 127.0.0.1:8080:8080 spring-example^C[?2004l[?2004h[?2004l
+[?2004hquan@quan-VirtualBox:~/Documents/Docker/material-applications/example-backend$ docker run -it -p 127.0.0.1:8080:8080 backend-example
+[?2004lok  	server	0.018s
+?   	server/cache	[no test files]
+ok  	server/common	0.009s
+?   	server/controller	[no test files]
+?   	server/pgconnection	[no test files]
+?   	server/router	[no test files]
+[?2004hquan@quan-VirtualBox:~/Documents/Docker/material-applications/example-backend$ docker run -it -p 127.0.0.1:8080:8080 backend-example ./server
+[?2004l[Ex 2.4+] REDIS_HOST env was not passed so redis connection is not initialized
+[Ex 2.6+] POSTGRES_HOST env was not passed so postgres connection is not initialized
+[GIN-debug] [WARNING] Creating an Engine instance with the Logger and Recovery middleware already attached.
+
+[GIN-debug] [WARNING] Running in "debug" mode. Switch to "release" mode in production.
+ - using env:	export GIN_MODE=release
+ - using code:	gin.SetMode(gin.ReleaseMode)
+
+[GIN-debug] GET    /ping                     --> server/router.pingpong (4 handlers)
+[GIN-debug] GET    /messages                 --> server/controller.GetMessages (4 handlers)
+[GIN-debug] POST   /messages                 --> server/controller.CreateMessage (4 handlers)
+[GIN-debug] Listening and serving HTTP on :8080
+[GIN] 2024/01/05 - 06:54:18 |[97;42m 200 [0m|      51.772µs |      172.17.0.1 |[97;44m GET     [0m "/ping"
+[GIN] 2024/01/05 - 06:54:26 |[97;42m 200 [0m|      29.673µs |      172.17.0.1 |[97;44m GET     [0m "/ping"
+^C[?2004hquan@quan-VirtualBox:~/Documents/Docker/material-applications/example-backend$ exit
+[?2004lexit
+
+Script done on 2024-01-05 13:54:40+07:00 [COMMAND_EXIT_CODE="2"]
